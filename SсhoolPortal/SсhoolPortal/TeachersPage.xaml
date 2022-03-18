@@ -19,6 +19,7 @@
                 <Menu Height="45" Background="#673AB7" Foreground="White">
                     <MenuItem Header="Расписание" Click="MenuItem_Click"/>
                     <MenuItem Header="Сертификаты" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="Запись на курс" Click="MenuItem_Click_2"/>
                 </Menu>
                 <Frame MinHeight="400" NavigationUIVisibility="Hidden" Name="FrmMain">
 

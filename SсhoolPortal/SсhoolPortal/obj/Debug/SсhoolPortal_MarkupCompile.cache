@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Админ\Desktop\SсhoolPortal\SсhoolPortal\obj\Debug\
+C:\Users\artem\Desktop\Новая папка (4)\SсhoolPortal\SсhoolPortal\obj\Debug\
 SсhoolPortal
 none
 false
 DEBUG;TRACE
-C:\Users\Админ\Desktop\SсhoolPortal\SсhoolPortal\App.xaml
-11481270565
+C:\Users\artem\Desktop\Новая папка (4)\SсhoolPortal\SсhoolPortal\App.xaml
+23-390504384
 21750853300
-371567719538
-20-1841408050
-AddCertificate.xaml;AddCourse.xaml;Authorization.xaml;ElectronicJournal.xaml;MainWindow.xaml;MyCertificates.xaml;MyMessages.xaml;Registration.xaml;StudentsPage.xaml;TeachersPage.xaml;TimetablePage.xaml;
+49985215906
+23-1300685901
+AddCertificate.xaml;AddClass.xaml;AddCourse.xaml;AddCourseTopic.xaml;AddPosition.xaml;AddTheme.xaml;AdminAuthorization.xaml;AdminPage.xaml;Authorization.xaml;DayOfWeekPage.xaml;ElectronicJournal.xaml;ListStudentPage.xaml;ListTeacherPage.xaml;MainWindow.xaml;MyCertificates.xaml;MyMessages.xaml;Registration.xaml;RegistrationForTheCourse.xaml;StudentsPage.xaml;TeacherRegistration.xaml;TeachersPage.xaml;TimetableNew.xaml;TimetablePage.xaml;
 
-True
+False
 

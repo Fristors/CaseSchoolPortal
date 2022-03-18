@@ -41,5 +41,6 @@ namespace SсhoolPortal
         public virtual DbSet<Timetable> Timetable { get; set; }
         public virtual DbSet<Topics> Topics { get; set; }
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Students> Students { get; set; }
     }
 }

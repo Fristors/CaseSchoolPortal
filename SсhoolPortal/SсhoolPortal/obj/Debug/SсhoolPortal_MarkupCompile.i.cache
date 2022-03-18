@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\artem\Desktop\SсhoolPortal\SсhoolPortal\obj\Debug\
+C:\Users\artem\Desktop\Новая папка (4)\SсhoolPortal\SсhoolPortal\SсhoolPortal\obj\Debug\
 SсhoolPortal
 none
 false
 DEBUG;TRACE
-C:\Users\artem\Desktop\SсhoolPortal\SсhoolPortal\App.xaml
-11481270565
+C:\Users\artem\Desktop\Новая папка (4)\SсhoolPortal\SсhoolPortal\SсhoolPortal\App.xaml
+23-390504384
 21750853300
-40-1757421928
-20950580250
-AddCertificate.xaml;AddCourse.xaml;Authorization.xaml;ElectronicJournal.xaml;MainWindow.xaml;MyCertificates.xaml;MyMessages.xaml;Registration.xaml;StudentsPage.xaml;TeachersPage.xaml;TimetablePage.xaml;
+531112682369
+231631100316
+AddCertificate.xaml;AddClass.xaml;AddCourse.xaml;AddCourseTopic.xaml;AddPosition.xaml;AddTheme.xaml;AdminAuthorization.xaml;AdminPage.xaml;Authorization.xaml;DayOfWeekPage.xaml;ElectronicJournal.xaml;ListStudentPage.xaml;ListTeacherPage.xaml;MainWindow.xaml;MyCertificates.xaml;MyMessages.xaml;Registration.xaml;RegistrationForTheCourse.xaml;StudentsPage.xaml;TeacherRegistration.xaml;TeachersPage.xaml;TimetableNew.xaml;TimetablePage.xaml;
 
-True
+False
 

@@ -38,6 +38,9 @@
         <AssociationConnector Association="CASEModel.FK_Teachers_Sex" ManuallyRouted="false" />
         <AssociationConnector Association="CASEModel.FK_Teachers_Users" ManuallyRouted="false" />
         <AssociationConnector Association="CASEModel.FK_Teachers_Class" />
+        <EntityTypeShape EntityType="CASEModel.Students" Width="1.5" PointX="12.75" PointY="8.5" />
+        <AssociationConnector Association="CASEModel.FK_Students_Class" />
+        <AssociationConnector Association="CASEModel.FK_Students_Sex" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

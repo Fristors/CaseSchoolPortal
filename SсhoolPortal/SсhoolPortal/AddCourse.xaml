@@ -38,7 +38,7 @@
                         <ColumnDefinition Width="389*"/>
                     </Grid.ColumnDefinitions>
                     <Button HorizontalAlignment="Right" Content="Зарегистрировать" Click="Button_Click" Grid.Column="1"/>
-                    <Button HorizontalAlignment="Left" Content="Назад" Style="{StaticResource MaterialDesignFlatButton}" Cursor="Hand" Grid.ColumnSpan="2"/>
+                    <Button HorizontalAlignment="Left" Content="Назад" Style="{StaticResource MaterialDesignFlatButton}" Cursor="Hand" Grid.ColumnSpan="2" Click="Button_Click_1"/>
                 </Grid>
             </StackPanel>
         </Border>

@@ -45,5 +45,11 @@ namespace SсhoolPortal
             FrameApp.frmObj = FrmMain;
             FrmMain.Navigate(new MyCertificates(usr));
         }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj = FrmMain;
+            FrmMain.Navigate(new RegistrationForTheCourse(usr));
+        }
     }
 }

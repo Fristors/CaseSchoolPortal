@@ -41,5 +41,10 @@ namespace SсhoolPortal
                 //FrameApp.frmObj.Navigate(new AddCertificate());
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new AdminAuthorization());
+        }
     }
 }

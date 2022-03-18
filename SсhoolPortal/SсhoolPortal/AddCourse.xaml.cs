@@ -45,5 +45,10 @@ namespace SсhoolPortal
                 MessageBox.Show("Курс успешно добавлен!");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new AdminPage());
+        }
     }
 }

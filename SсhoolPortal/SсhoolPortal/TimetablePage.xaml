@@ -24,10 +24,6 @@
                     <ListBox x:Name="Thursday" Height="170" Width="150" HorizontalAlignment="Left" Margin="20 0 0 0"/>
                     <ListBox x:Name="Friday" Height="170" Width="150" HorizontalAlignment="Left" Margin="20 0 0 0"/>
                 </StackPanel>
-
-
-                <Button HorizontalAlignment="Center" Content="Назад" Style="{StaticResource MaterialDesignFlatButton}"  Margin="0 20 0 20"/>
-                
             </StackPanel>
         </Border>
     </Grid>

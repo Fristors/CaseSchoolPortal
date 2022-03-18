@@ -19,6 +19,7 @@
     <NavigationProperty Name="Teachers" Relationship="Self.FK_Class_Teachers" FromRole="Class" ToRole="Teachers" />
     <NavigationProperty Name="Timetable" Relationship="Self.FK_Timetable_Class" FromRole="Class" ToRole="Timetable" />
     <NavigationProperty Name="Teachers1" Relationship="CASEModel.FK_Teachers_Class" FromRole="Class" ToRole="Teachers" />
+    <NavigationProperty Name="Students" Relationship="CASEModel.FK_Students_Class" FromRole="Class" ToRole="Students" />
   </EntityType>
   <EntityType Name="Courses">
     <Key>
@@ -98,6 +99,7 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Sex1" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Teachers" Relationship="Self.FK_Teachers_Sex" FromRole="Sex" ToRole="Teachers" />
+    <NavigationProperty Name="Students" Relationship="CASEModel.FK_Students_Sex" FromRole="Sex" ToRole="Students" />
   </EntityType>
   <EntityType Name="Subjects">
     <Key>
@@ -449,6 +451,15 @@
       <End Role="Class" EntitySet="Class" />
       <End Role="Teachers" EntitySet="Teachers" />
     </AssociationSet>
+    <EntitySet Name="Students" EntityType="CASEModel.Students" />
+    <AssociationSet Name="FK_Students_Class" Association="CASEModel.FK_Students_Class">
+      <End Role="Class" EntitySet="Class" />
+      <End Role="Students" EntitySet="Students" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Students_Sex" Association="CASEModel.FK_Students_Sex">
+      <End Role="Sex" EntitySet="Sex" />
+      <End Role="Students" EntitySet="Students" />
+    </AssociationSet>
   </EntityContainer>
   <Association Name="FK_Teachers_Class">
     <End Type="CASEModel.Class" Role="Class" Multiplicity="0..1" />
@@ -459,6 +470,44 @@
       </Principal>
       <Dependent Role="Teachers">
         <PropertyRef Name="idClass" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idSex" Type="Int32" Nullable="false" />
+    <Property Name="idClass" Type="Int32" Nullable="false" />
+    <Property Name="Birthday" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Phone" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Class" Relationship="CASEModel.FK_Students_Class" FromRole="Students" ToRole="Class" />
+    <NavigationProperty Name="Sex" Relationship="CASEModel.FK_Students_Sex" FromRole="Students" ToRole="Sex" />
+  </EntityType>
+  <Association Name="FK_Students_Class">
+    <End Type="CASEModel.Class" Role="Class" Multiplicity="1" />
+    <End Type="CASEModel.Students" Role="Students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Class">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Students">
+        <PropertyRef Name="idClass" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Students_Sex">
+    <End Type="CASEModel.Sex" Role="Sex" Multiplicity="1" />
+    <End Type="CASEModel.Students" Role="Students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sex">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Students">
+        <PropertyRef Name="idSex" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

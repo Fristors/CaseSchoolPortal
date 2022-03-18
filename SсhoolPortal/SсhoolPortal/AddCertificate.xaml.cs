@@ -43,5 +43,10 @@ namespace SсhoolPortal
             db.SaveChangesAsync();
             MessageBox.Show("Сертификат успешно добавлен!");
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.Navigate(new AdminPage());
+        }
     }
 }

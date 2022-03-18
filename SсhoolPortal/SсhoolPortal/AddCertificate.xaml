@@ -38,7 +38,7 @@
 
                 <Grid Margin="0 20 0 20">
                     <Button HorizontalAlignment="Right" Content="Зарегистрировать" Click="Button_Click"/>
-                    <Button HorizontalAlignment="Left" Content="Назад" Style="{StaticResource MaterialDesignFlatButton}" Cursor="Hand"/>
+                    <Button HorizontalAlignment="Left" Content="Назад" Style="{StaticResource MaterialDesignFlatButton}" Cursor="Hand" Click="Button_Click_1"/>
                 </Grid>
             </StackPanel>
         </Border>

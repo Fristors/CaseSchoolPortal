@@ -18,6 +18,7 @@ namespace SсhoolPortal
         public Sex()
         {
             this.Teachers = new HashSet<Teachers>();
+            this.Students = new HashSet<Students>();
         }
     
         public int id { get; set; }
@@ -25,5 +26,7 @@ namespace SсhoolPortal
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Teachers> Teachers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Students> Students { get; set; }
     }
 }

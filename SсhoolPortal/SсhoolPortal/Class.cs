@@ -19,6 +19,7 @@ namespace SсhoolPortal
         {
             this.Timetable = new HashSet<Timetable>();
             this.Teachers1 = new HashSet<Teachers>();
+            this.Students = new HashSet<Students>();
         }
     
         public int id { get; set; }
@@ -29,5 +30,7 @@ namespace SсhoolPortal
         public virtual ICollection<Timetable> Timetable { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Teachers> Teachers1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Students> Students { get; set; }
     }
 }

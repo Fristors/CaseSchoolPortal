@@ -24,7 +24,8 @@
 
                 <TextBox x:Name="login" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="40"/>
                 <PasswordBox x:Name="password" materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Height="40"/>
-                <Button Content="Войти в личный кабинет" Margin="0 20" Height="35" Cursor="Hand" Click="Button_Click"/>
+                <Button Content="Войти в личный кабинет" Margin="0 20 0 0" Height="35" Cursor="Hand" Click="Button_Click"/>
+                <Button Content="Войти как администратор" Margin="0 20" Height="35" Cursor="Hand" Click="Button_Click_1"/>
             </StackPanel>
         </Border>
     </Grid>
